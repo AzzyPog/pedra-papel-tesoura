@@ -3,11 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/global.css">
+    <script src="./src/js/script.js" async></script>
     <title>Joquempô</title>
 </head>
 <body>
     <main>
-        
+        <h1>Joquempô Game</h1>
+        <section class="main-section">
+            <div class="player-options" id="playerOptions">
+                <img opt="pedra" src="./src/img/pedra.png" />
+                <img opt="papel" src="./src/img/papel.png" />
+                <img opt="tesoura" src="./src/img/tesoura.png" />
+            </div>
+            <div class="player-choice" id="playerChoice">
+                <img>
+            </div>
+            <div class="enemy-choice" id="enemyChoice">
+                <img>
+            </div>
+            <div class="enemy-options" id="enemyOptions">
+                <img opt="pedra" src="./src/img/pedra.png" />
+                <img opt="papel" src="./src/img/papel.png" />
+                <img opt="tesoura" src="./src/img/tesoura.png" />
+            </div>
+        </section>
+        <span id="winner"></span>
     </main>
 </body>
 </html>

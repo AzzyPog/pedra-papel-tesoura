@@ -1,0 +1,71 @@
+.player-options img,
+.enemy-options img {
+    width: 150px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.3;
+    transition-duration: 0.4s;
+}
+
+.player-options img:hover,
+.enemy-options img{
+    opacity: 1;
+}
+
+.player-choice img,
+.enemy-choice img {
+    width: 200px;
+
+}
+
+.player-options,
+.enemy-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section {
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.black-white {
+    filter: grayscale(100%);
+}
+
+.lose {
+    color: #ff0000;
+}
+
+.draw{
+    color: rgb(250, 250, 49);
+}
+
+.image-grow-animation {
+    animation-name: image-grow;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+
+/* animations */
+
+@keyframes image-grow {
+    0% {
+      width: 10px;
+    }
+    60% {
+      width: 200px;
+    }
+    80% {
+        width: 150px;
+    } 
+    100% {
+        width: 200px;
+    }
+
+  }
